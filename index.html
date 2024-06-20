@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Calculadora - IMC</title>
+</head>
+<body>
+    <div id="conteudo_geral">
+        <div id="conteudo_imagem">
+            <img src="image/image.svg" alt="image_man_running">
+        </div>
+        <div id="conteudo_calculadora">
+            <form>
+                <h1>Calculadora - IMC</h1>
+                <div id="traço"></div>
+                <label for="peso">
+                    Peso em kg <span class="span_ex">(ex.: 85.4)</span>
+                </label>
+                <div class="inputs">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input id="peso" type="number" required/>
+                    <span>Kg</span>
+                </div>
+                <label for="altura">
+                    Altura em metros <span class="span_ex">(ex.: 1.76)</span>
+                </label>
+                <div class="inputs">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input id="altura" type="number"/>
+                    <span>m</span>
+                </div>
+            <button onclick="imc()">CALCULAR</button>
+            </form>
+            <div id="resultado_div">
+                <span id="resultado"></span>
+            </div>
+            <div id="saiba_mais_div">
+                <p id="saiba_mais">Mais informações, <a target="_blank" href="https://www.programasaudefacil.com.br/calculadora-de-imc">clique aqui!</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
