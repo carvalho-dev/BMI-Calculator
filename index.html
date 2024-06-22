@@ -13,7 +13,7 @@
             <img src="image/image.svg" alt="image_man_running">
         </div>
         <div id="conteudo_calculadora">
-            <form>
+            <form novalidate>
                 <h1>Calculadora - IMC</h1>
                 <div id="traço"></div>
                 <label for="peso">
@@ -21,7 +21,7 @@
                 </label>
                 <div class="inputs">
                     <i class="fa-solid fa-weight-hanging"></i>
-                    <input id="peso" type="number" required/>
+                    <input id="peso" type="number" autocomplete="off"/>
                     <span>Kg</span>
                 </div>
                 <label for="altura">
@@ -29,16 +29,18 @@
                 </label>
                 <div class="inputs">
                     <i class="fa-solid fa-ruler"></i>
-                    <input id="altura" type="number"/>
+                    <input id="altura" type="number" autocomplete="off"/>
                     <span>m</span>
                 </div>
-            <button onclick="imc()">CALCULAR</button>
             </form>
+            <div>
+                <button onclick="imc()">CALCULAR</button>
+            </div>
             <div id="resultado_div">
                 <span id="resultado"></span>
             </div>
             <div id="saiba_mais_div">
-                <p id="saiba_mais">Mais informações, <a target="_blank" href="https://vidasaudavel.einstein.br/calcular-o-seu-imc/">clique aqui!</a></p>
+                <p id="saiba_mais">Mais informações, <a target="_blank" href="https://www.programasaudefacil.com.br/calculadora-de-imc">clique aqui!</a></p>
             </div>
         </div>
     </div>
